@@ -1,0 +1,151 @@
+.experience__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.experience__header .section-label {
+  justify-content: center;
+}
+
+.experience__timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.experience__timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--border-glow), var(--border-glass), transparent);
+}
+
+.experience__item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.experience__item:last-child {
+  margin-bottom: 0;
+}
+
+.experience__timeline-dot {
+  position: absolute;
+  left: -33px;
+  top: 32px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 2px solid rgba(79, 70, 229, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.experience__timeline-dot-inner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+}
+
+.experience__card {
+  padding: 32px;
+}
+
+.experience__card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.experience__role {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.experience__company {
+  font-size: 0.95rem;
+  color: var(--text-accent);
+  font-weight: 500;
+}
+
+.experience__location {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.experience__period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  padding: 6px 14px;
+  border-radius: 50px;
+  background: rgba(124, 58, 237, 0.06);
+  border: 1px solid rgba(124, 58, 237, 0.12);
+}
+
+.experience__points {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.experience__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.experience__point-marker {
+  min-width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  margin-top: 9px;
+}
+
+@media (max-width: 768px) {
+  .experience__timeline {
+    padding-left: 30px;
+  }
+
+  .experience__timeline::before {
+    left: 10px;
+  }
+
+  .experience__timeline-dot {
+    left: -27px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .experience__timeline-dot-inner {
+    width: 6px;
+    height: 6px;
+  }
+
+  .experience__card {
+    padding: 24px;
+  }
+
+  .experience__card-top {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
